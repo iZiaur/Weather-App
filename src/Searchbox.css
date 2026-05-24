@@ -1,0 +1,56 @@
+.search form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  animation: slideUp 1.2s ease;
+}
+
+.MuiTextField-root {
+  width: 320px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.MuiOutlinedInput-root {
+  color: #555555 !important; 
+}
+
+.MuiInputLabel-root {
+  color: #ddd !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: 1px solid rgba(255,255,255,0.3) !important;
+}
+
+button {
+  margin-top: 20px !important;
+  padding: 12px 25px !important;
+  border-radius: 30px !important;
+  background: linear-gradient(45deg, #00c6ff, #0072ff) !important;
+  transition: 0.4s ease !important;
+  font-weight: bold !important;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(0, 114, 255, 0.7);
+}
+.MuiTextField-root {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
