@@ -15,8 +15,11 @@ export default function Searchbox({updateinfo}){
 
     
     async function getinfo(city){
-        try{let URL=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ba1292c9f0c59745ab6756587ee4c81b&units=metric`
+        try{
+            
+            const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
+            let URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
         let res=await fetch(URL)
         let jsonresponse=await res.json()
       
